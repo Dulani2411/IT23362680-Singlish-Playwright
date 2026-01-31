@@ -1,8 +1,24 @@
-
-# Playwright
+# Create .gitignore file
+cat > .gitignore << EOF
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+test-results/
+playwright-report/
+playwright/.cache/
+*.png
+*.jpg
+*.mp4
+*.webm
+.DS_Store
+EOF
+
+# Remove these from git tracking
+git rm -r --cached node_modules/ 2>/dev/null
+git rm -r --cached test-results/ 2>/dev/null
+git rm -r --cached playwright-report/ 2>/dev/null
+
+# Add and commit
+git add .
+git commit -m "Add .gitignore and clean up"
+
+# Push
+git push -u origin main --force

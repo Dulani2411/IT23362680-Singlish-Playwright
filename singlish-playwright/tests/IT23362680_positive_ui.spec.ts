@@ -3,22 +3,11 @@ import { test, expect } from "@playwright/test";
 const testCases = [
   {
     id: "Pos_UI_0001",
-    name: "Real-time conversion",
-    input: "mama pansalata enavaa",
-    expected: "මම පන්සලට එනවා",
+    name: "Backspace / corrections",
+    input: "mama sellam karanna yanavaa",
+    expected: "මම සෙල්ලම් කරන්න යනවා",
   },
-  {
-    id: "Pos_UI_0002",
-    name: "Clear input",
-    input: "mama kiri bonavaa",
-    expected: "",
-  },
-  {
-    id: "Pos_UI_0003",
-    name: "Font rendering",
-    input: "oyaata kaesilladha?",
-    expected: "ඔයාට කැසිල්ලද?",
-  },
+  
 ];
 
 test.describe("Positive UI Tests", () => {

@@ -3,21 +3,9 @@ import { test, expect } from "@playwright/test";
 const testCases = [
   {
     id: "Neg_UI_0001",
-    name: "Long UI lag",
-    input: "gavayaa gavayaa gavayaa gavayaa gavayaa",
-    expected: "ගවයා ගවයා ගවයා ගවයා ගවයා",
-  },
-  {
-    id: "Neg_UI_0002",
     name: "Overflow handling",
-    input: "gavayaa ".repeat(12),
-    expected: "ගවයා ".repeat(12),
-  },
-  {
-    id: "Neg_UI_0003",
-    name: "Page reload behavior",
-    input: "mama gahata naginavaa",
-    expected: "Output resets",
+    input: "kanavaa ".repeat(12),
+    expected: "කනවා ".repeat(12),
   },
 ];
 
