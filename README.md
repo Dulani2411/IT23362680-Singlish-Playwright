@@ -2,6 +2,8 @@
 
 # ITPM (IT3040) Assignment 1 – Singlish to Sinhala Automation Testing
 
+#Repo Link: https://github.com/Dulani2411/IT23362680-Singlish-Playwright.git
+
 ## Project Overview
 
 This project automates functional and UI test scenarios for the SwiftTranslator
