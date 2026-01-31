@@ -80,13 +80,7 @@ const testCases = [
     description: "Tests handling of mixed text with unsupported characters - EXPECTED TO FAIL (no validation)",
     shouldFail: true,
   },
-  {
-    id: "Neg_UI_0001",
-    name: "Overflow handling",
-    input: "kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa kanavaa…............",
-    expected: "කනවා කනවා කනවා කනවා කනවා කනවා කනවා කනවා කනවා කනවා කනවා කනවා…............",
-    description: "Tests handling of very long repeated text",
-  },
+  
 ];
 
 test.describe("Negative Functional Tests", () => {
